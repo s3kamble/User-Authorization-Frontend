@@ -6,6 +6,7 @@
 <br>
 
 ### <u><b>Check app</b></u>
+[Live app](https://objective-brown-08da01.netlify.app/)
 
 ### <u><b>Functionalaties</b></u>
 1. Signup - Creates new User in the database

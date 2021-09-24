@@ -44,33 +44,35 @@ const Signup = ()=>{
       }
 
       try{
-          let resData = await fetch(url, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(reqObj),
-          });
-  
-          resData = await resData.json();
-          console.log(resData)
+          if(password !== confirmPassword){
+            alert("Password and Confirm password do not match")
+          }
+          else
+          {
+            let resData = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(reqObj),
+            });
 
-          if(resData ){
-              event.target.userName.value =
-              event.target.email.value =
-              event.target.password.value = 
-              event.target.confirmPassword.value = "";
-              alert("User Created Successfully");
-              setRedirect(true);
+            let dataReceived = await resData.json();
+
+            if(resData.status === 500 || dataReceived.message === 'server error'){      
+                alert("User already exists");
+                setRedirect(false);
+            }
+            else{
+                alert("User Created Successfully");
+                setRedirect(true);
+            }
           }
-          else{
-              event.target.userName.value =
-              event.target.email.value =
-              event.target.password.value = 
-              event.target.confirmPassword.value = "";
-              alert("User Could not be created");
-              setRedirect(false);
-          }
+          event.target.userName.value =
+          event.target.email.value =
+          event.target.password.value = 
+          event.target.confirmPassword.value = "";
           
-      }catch(err){
+      }
+      catch(err){
           console.log(err);
           event.target.userName.value =
           event.target.email.value =
