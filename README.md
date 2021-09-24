@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+### <u><b>User-Authorization</b></u>
+- This repository contains Front-end code for User Authorization .
+- This app is built using React.js ,which fetches data from backend hosted on Heroku.
+- The app routes to Dasboard  only if user is logged in
+- The backend is built using Node.js and uses JWT for User Authorization
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### <u><b>Check app</b></u>
 
-## Available Scripts
+### <u><b>Functionalaties</b></u>
+1. Signup - Creates new User in the database
+2. Login  - Existing user on successful login can access the Dashboard
+<br>
 
-In the project directory, you can run:
+### <u><b>Keywords</b></u>
+- React js
+- React routing
+<br>
 
-### `npm start`
+### <u><b>Prerequisite</b></u>
+1. Node installed on local system.
+2. Git installed on local system.
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### <u><b>Usage</b></u>
+1. Navigate to the directory where you want the frontend app folder to be created,Open terminal of your choice an Clone the repository
+```sh
+   git clone https://github.com/s3kamble/User-Authorization-Frontend.git.
+```
+2. On successful clone,navigate to the folder created and install the required packages by typing the following in terminal
+ ```sh
+   npm install
+```
+3. Start the app by typing
+ ```sh
+   npm start
+```
+4. The app will start in the default web browser
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### <u><b>Dependencies</b></u>
+- The backend is hosted on heroku and hence the frontend app can be used/checked without any dependency.
 
-### `npm test`
+- In order to use the backend code locally,follow the steps below:
+1. Navigate to the  directory where you want the backend folder to be created,Open the terminal,and type the following:
+ - Clone the repo
+```sh
+   git clone https://github.com/s3kamble/User-Authorization-Backend.git.
+```
+ - Install packages
+ ```sh
+   npm install
+```
+- Start the backend server
+ ```sh
+   npm run start
+```
+- For more information,config read:
+ [Readme for backend](https://github.com/s3kamble/User-Authorization-Backend/blob/master/README.md)
+ <br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Open the frontend app:
 
-### `npm run build`
+   a. Naviagte to Signup.jsx and use the local url instead of heroku url
+   ```sh
+   const url="http://localhost:3002/users/signup"
+   ```
+   b. Naviagte to Login.jsx and use the local url instead of heroku url.
+   ```sh
+   const url="http://localhost:3002/users/login"
+   ```
+   <br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### <u><b>Directory-tree</b></u>
+```
+.
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── close.jpg
+    ├── components
+    │   ├── Dashboard
+    │   │   └── Dashboard.jsx
+    │   ├── Footer
+    │   │   ├── Footer.jsx
+    │   │   └── Footer.module.css
+    │   ├── Hamburger
+    │   │   ├── Hamburger.jsx
+    │   │   └── Hamburger.module.css
+    │   ├── Home
+    │   │   ├── Home.jsx
+    │   │   └── Home.module.css
+    │   ├── Login
+    │   │   ├── Login.jsx
+    │   │   └── Login.module.css
+    │   ├── Navbar
+    │   │   ├── Navbar.jsx
+    │   │   └── Navbar.module.css
+    │   └── Signup
+    │       ├── Signup.jsx
+    │       └── Signup.module.css
+    ├── index.css
+    ├── index.js
+    ├── logo.png
+    ├── logo.svg
+    ├── menu-black.jpg
+    ├── reportWebVitals.js
+    ├── routing
+    │   ├── AppRouter.js
+    │   └── protectedRoute.js
+    ├── setupTests.js
+    └── utils
+        └── loginContext.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

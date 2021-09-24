@@ -1,0 +1,41 @@
+.menu{
+    margin-top:0.5%;
+    margin-bottom:0.5%;
+    display:none;
+    margin-right: 1%;
+    width:5rem;
+ 
+
+}
+
+.navlinks{
+    margin-right: 1%;  
+    font-size: 1.3rem;
+    height:7rem;
+    width:7rem;
+    position:fixed;
+    top:2.5rem;
+    right:0px;
+    font:rgb(224, 255, 79);
+    border:1px solid yellow;
+    background-color: rgb(157, 106, 137);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+
+.links{
+    list-style: none;
+    text-decoration: none;
+    color:rgb(224, 255, 79);
+    margin-top:2rem;
+    font:1rem;
+}
+
+@media(max-width:1050px){
+
+    .menu{
+        display: unset;
+    }
+}

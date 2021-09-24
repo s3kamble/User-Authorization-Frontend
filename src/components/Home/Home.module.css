@@ -1,0 +1,61 @@
+.container{
+    width:50%;
+    height:fit-content;
+    border:1px solid rgb(224, 255, 79);
+    margin:auto;
+    margin-top: 5%;
+    color: rgb(92, 55, 76);
+    background-color: #A9BCD0;
+    padding:2%
+}
+
+.buttons{
+    width:15%;
+    padding: 1%;
+    background-color:rgb(224, 255, 79) ;
+}
+
+.buttonLinks{
+    text-decoration: none;
+    font-size:1.5rem;
+    color:rgb(92, 55, 76)
+}
+
+@media(max-width:1250px){
+    .container{
+        width:60%
+    }
+    .buttons{
+        width:18%;
+       
+    }
+}
+
+@media(max-width:820px){
+    .container{
+        width:70%
+    }
+    .buttons{
+        width:20%;
+    }
+}
+
+@media(max-width:820px){
+    .container{
+        width:90%
+    }
+    .buttons{
+        width:25%;
+        padding:2%
+    }
+}
+
+@media(max-width:820px){
+    .container{
+        width:100%
+    }
+    .buttons{
+        width:30%;
+        padding:2%
+    }
+}

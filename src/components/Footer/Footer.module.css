@@ -1,0 +1,50 @@
+.footerBar{
+    height:8%;
+    border:0.5px solid yellow;
+    display:flex;
+    justify-content: space-between;
+    background-color:rgb(157, 106, 137);
+    color:rgb(224, 255, 79);
+    position: fixed;
+    bottom:0;
+    width:100%
+
+}
+
+.logo{
+    margin-left:2%;
+    margin-top:0.5%;
+    margin-bottom:0.5%
+
+}
+
+.logoImg{
+    height:4rem;
+    width:4rem;
+}
+
+.footerlinks{
+    margin-right: 2%;  
+    display:flex;
+    flex: row;
+    font-size: 1.2rem;
+}
+
+.links{
+    list-style: none;
+    text-decoration: none;
+    color:rgb(224, 255, 79);
+    margin: 0.5rem;
+    font:1rem;
+}
+
+.links:hover{
+    color: rgb(86, 100, 22);
+
+}
+
+.title{
+    color:rgb(224, 255, 79);
+    font-family:cursive;
+    font-weight:bolder;
+}
